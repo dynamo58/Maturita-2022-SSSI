@@ -1,8 +1,9 @@
-[🇨🇿 čeština](https://github.com/dynamo58/gol/blob/master/README_cs.md)
+[🇨🇿 Klikněte zde pro českou verzi tohoto README](https://github.com/dynamo58/gol/blob/master/README_cs.md)
 
 ---
 
 # About
+
 This is a repo for all source files encompassing my [Maturita](https://en.wikipedia.org/wiki/Matura#In_the_Czech_Republic) project.
 
 It is composed of two main parts:
@@ -13,12 +14,15 @@ It is composed of two main parts:
 
 
 ## Disclaimer
+
 All of the CLI outputs, GUI labels, etc.  are in Czech.
 
 # Setup
+
 Run the `setup.py` script for setup (linux only). \[ This is WIP\]
 
 # Build
+
 Run the `build.py` script for building.
 
 cli args:
@@ -27,8 +31,14 @@ cli args:
 
 (note that the actual build tools for the targets must be installed)
 
-e.g.:
-```./build.py -arch wasm```
-```./build.py -os win -arch i686-pc-windows-msvc```
+For example:
+
+```bash
+./build.py -arch wasm
+```
+
+```
+./build.py -os win -arch i686-pc-windows-msvc
+```
 
 [...] or you can just build them the way you want, obviously ¯\\\_(ツ)\_/¯

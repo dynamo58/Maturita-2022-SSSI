@@ -1,16 +1,11 @@
 % Poznámky dle komentářů supervizora, ad. konvence
-
 	% po kódovém bloce novou větu
-
 	% před blokem kódu konec věty může (ale nemusí) být,
 		% avšak věta nesmí pokračovat za blokem
-
 	% referování na funkce se složenými závorkami
 		% -||-          makra s vykřičníkem
-
 	% referování na nějaký kód -> nejsou-li speciální znaky,
 		% poté monospace jen poprvé
-
 	% před finalizací doformátovat nbsp přes `write_nbsp.py`
 
 \documentclass[a4paper, 12pt, twoside]{article} % twoside
@@ -142,21 +137,21 @@
 
 
 \section*{Úvod}
-	Rust je jedním z~nejrychleji se rozšiřujících programovacích jazyků. Jeho kompilér je otevřený software vyvíjený firmou Mozilla. Dle statistik webového portálu \href{https://stackoverflow.com/}{Stack Overflow} se jedná o  „Programátory nejoblíbenější jazyk“ dle všech hlasování v~rocích rocích 2015-2021 konsekutivně \cite{stack}. Tomu je tak i~přes jeho relativní mladost. Má všestranně se rozšiřující ekosystém - lze v~něm programovat programovat servery, vestavěné systémy, GUI, weby, ad. včetně systémového programování umožnénému díky jeho abstrakci s~nulovou cenou.
+	Rust je jedním z~nejrychleji se rozšiřujících programovacích jazyků. Jeho kompilér je otevřený software vyvíjený firmou Mozilla. Dle statistik webového portálu \href{https://stackoverflow.com/}{Stack Overflow} se jedná o  „Programátory nejoblíbenější jazyk“ dle všech hlasování v~rocích rocích 2015-2021 konsekutivně \cite{stack}. Tomu je tak i~přes jeho relativní mladost. Má všestranně se rozšiřující ekosystém - lze v~něm programovat servery, vestavěné systémy, GUI, weby, ad. včetně systémového programování umožnénému díky jeho abstrakci s~nulovou cenou.
 
 	Rust mě zaujal zejména z~hlediska velice dobrého hodnocení co se týče nižších programovacích jazyků, proto jsem si ho i~zvolil jako první jazyk této kategorie, který jsem se naučil.
 	
-	Tato práce si bere za cíl představit tento jazyk, jeho přednosti, výhody a nevýhody. Její součástí je program v jazyce vytvořený a přílohy obsahují příručku - zevrubného a rozsáhlého průvodce programováním v jazyce Rust.
+	Tato práce si bere za cíl představit tento jazyk, jeho přednosti, výhody a~nevýhody. Její součástí je program v~jazyce vytvořený a~přílohy obsahují příručku - zevrubného a~rozsáhlého průvodce programováním v~jazyce Rust.
 
 \section*{Seznámení s~Rustem}
 	\subsection{Přehled a~využití}
-		Rust je nízkoúrovňový kompilační jazyk vyvíjený společností Mozilla. Jeho \textit{de facto} cílem je být „modernější“ a lepší C++. S~tímto jazykem má mnohé společné - má statickou typovou kontrolu, oba jsou objektově orientované, dovolují správu paměti na~nízké úrovni, atd. Dokonce některé Rustové programy jsou pouhými wrappery pro stávající C++ aplikace. Čím se však snaží tento letitý standard předčít je svojí paměťovou a~vláknovou bezpečností. Tu zaručuje jeho kompilér a~velice efektivně je tak zabráněno runtime chybám (takovým, vytvořeným během doby, při níž je samtný program spuštěn). 
+		Rust je nízkoúrovňový kompilační jazyk vyvíjený společností Mozilla. Jeho \textit{de facto} cílem je být „modernější“ a~ „bezpečnější“ C++. S~tímto jazykem má mnohé společné - má statickou typovou kontrolu, oba jsou objektově orientované, dovolují správu paměti na~nízké úrovni, atd. Dokonce některé Rustové programy jsou pouhými wrappery pro stávající C++ aplikace. Čím se však snaží tento letitý standard předčít je svojí paměťovou a~vláknovou bezpečností. Tu zaručuje jeho kompilér a~velice efektivně je tak zabráněno runtime chybám (takovým, vytvořeným během doby, při níž je samotný program spuštěn). 
 
 		Tato vlastnost je mezi programátory vysoce ceněna. Také dost stávajících projektů/standardů začalo integrovat Rust do svých produktů. Některé z~těchto společností jsou DropBox\cite{dropbox}, Cloudflare\cite{cloudflare}, npm\cite{npm}, Discord\cite{discord} a~četné množství dalších. Nejvýznamnější entitou zakomponovávající Rust je Amazon\cite{amazon}, který v~Rustu napsal celý jejich Firecracker VMM a~přispěl do ekosystému.
 
 \section{Přednosti jazyka}
 	\subsection{OOP}
-		Podobně jako ve spoustě dalších jazyků nabízí Rust model pro objektově orientované programování. To je zprostředkováno pomocí struktur, nikoliv tříd. Výkonnostně jsou tyto metody velice podobné, liší se prakticky jen jejich programovacími rozhraními. Základním typem v OOP je \texttt{enum}. Ten je výčtový typ — tvoří ho nějaké množství pojmenovaných polí.
+		Podobně jako ve spoustě dalších jazyků nabízí Rust model pro objektově orientované programování. To je zprostředkováno pomocí struktur, nikoliv tříd. Výkonnostně jsou tyto metody velice podobné, liší se prakticky jen jejich programovacími rozhraními. Základním typem v~OOP je \texttt{enum}. Ten je výčtový typ — tvoří ho nějaké množství pojmenovaných polí.
 		\begin{minted}{rust}
 enum Jazyk {
 	Python,
@@ -192,7 +187,7 @@ struct Clovek {
 }
 		\end{minted}
 		
-		Nadále lze použít \texttt{impl} pro tvorbu metod nad instancí této struktury.
+		Nadále lze použít \texttt{impl} pro tvorbu metod nad instancemi této struktury.
 		\begin{minted}{rust}
 impl Clovek {
 	fn rekni_ahoj(&self) {
@@ -235,18 +230,18 @@ impl Starnuti for Zvire {
 			\end{minted}
 		
 		\subsubsection{Generika místo polymorfismu}
-			Polymorfismus je způsob použití stejného rozhraní pro různé datové struktury. Toto je v Rustu umožněno pomocí využití generických funkcionalit.
+			Polymorfismus je způsob použití stejného rozhraní pro různé datové struktury. Toto je v~Rustu umožněno pomocí využití generických funkcionalit.
 			\begin{minted}{rust}
 fn vypsat<T: Display>(arg: T) {
 	println!("{}", T);
 }
 			\end{minted}
 			
-			Tento syntax značí, že funkce \texttt{vypsat} využívá 1 generickou datovou struktura, která musí implementovat \texttt{trait} \texttt{Display} (tato \texttt{trait} slouží pro vypsání hodnoty dané proměnné). Následně je poznamenáno, že argument \texttt{arg} je tohoto typu.
+			Tento syntax značí, že funkce \texttt{vypsat} využívá 1 generickou datovou strukturu, která musí implementovat \texttt{trait} \texttt{Display} (tato \texttt{trait} slouží pro vypsání hodnoty dané proměnné). Následně je poznamenáno, že argument \texttt{arg} je tohoto typu.
 			
-			Specifikování \texttt{trait}s, které daná datová struktura implementuje je nutné pro splnění statické kontroly typů. Traits jsou tedy připodobnění polymorfismu v OOP jazycích. Identifukují sadu metod, které by měli \texttt{struct}y, které ji implementují, mít.
+			Specifikování \texttt{trait}s, které daná datová struktura implementuje je nutné pro splnění statické kontroly typů. Traits jsou tedy připodobněním polymorfismu v~ jiných OOP jazycích. Identifukují sadu metod, které by měli \texttt{struct}y, které ji implementují, mít.
 			
-			Při kompilaci je kompilérem na základě kódu zjištěno, přesně kterými typy může být daná generická funkce využita (na základě statické typové kontroly) a následně funkci pro všechny tyto typy vygeneruje. Tomuto procesu se říká monomorfizace.
+			Při kompilaci je kompilérem na základě kódu zjištěno, přesně kterými typy může být daná generická funkce využita (na základě statické typové kontroly) a~následně funkci pro všechny tyto typy vygeneruje. Tomuto procesu se říká \textbf{monomorfizace}.
 
 	\subsection{Modulový systém}
 		Lokální soubory nejsou strukturovány manuálně. O tuto činnost se stará správce projektu \texttt{cargo}. Jde o systém podobné funkcionality jako například npm sloužící pro správu projektů běžících pod systémem Node.js.
@@ -288,7 +283,7 @@ fn vypsat<T: Display>(arg: T) {
 		
 		Ve výchozím stavu, najde-li cargo při stavění projektu ve složce \texttt{src} soubor \texttt{main.rs}, považuje ho za root (kořen) projektu. Zároveň na~jeho základě vytvoří automaticky binární crate. Pro rozšiřování projektu lze přidat do složky \texttt{src} soubor \rust{lib.rs}. Ten slouží jako knihovna — obsahuje kód pro využití ve více souborech, popřípadě odkazuje na~logické části adresáře. Je-li tento soubor cargem nalezen, je automaticky vytvořená druhá crate — library crate. Pravidlem je, že každý projekt musí být alespoň 1 crate - buďto library crate, nebo binary crate. Zároveň binárních může být libovolné množství, ale knihovní může být maximálně jedna.
 		
-		Pokud je žádoucí více binárních crate (a tedy více vyprodukovaných binárních souborů), ve složce \texttt{src} je potřeba vytvořit složku \texttt{bin}. Následně každý \texttt{.rs} soubor v~této složce umístěný bude cargem zvlášť zpracován jako binární crate a~každý z~nich při stavění vyprodukuje binární soubor. Toto však není příliš časté. Většinou je ve~složce \texttt{src} tvořeno více pomocných souborů, jejichž obsah je buďto implicitně, nebo či explicitně volán přes kořenový soubor (\texttt{main.rs}). V praxi pustom takové tvorby může být následovný.
+		Pokud je žádoucí více binárních crate (a tedy více vyprodukovaných binárních souborů), ve složce \texttt{src} je potřeba vytvořit složku \texttt{bin}. Následně každý \texttt{.rs} soubor v~této složce umístěný bude cargem zvlášť zpracován jako binární crate a~každý z~nich při stavění vyprodukuje binární soubor. Toto však není příliš časté. Většinou je ve~složce \texttt{src} tvořeno více pomocných souborů, jejichž obsah je buďto implicitně, nebo či explicitně volán přes kořenový soubor (\texttt{main.rs}). V~praxi pustom takové tvorby může být následovný.
 		\begin{center}
 			\begin{forest}
 				for tree={
@@ -319,7 +314,7 @@ fn vypsat<T: Display>(arg: T) {
 		\end{center}
 		
 		Obsah souborů podléhající této souborové struktuře by mohl být takovýto.
-		\begin{minted}
+		\begin{minted}{rust}
 // formatovani.rs
 
 pub fn nahoru(s: String) -> String {
@@ -327,7 +322,7 @@ pub fn nahoru(s: String) -> String {
 }
 
 // lib.rs
-pub mod formatovani
+pub mod formatovani;
 
 // main.rs
 
@@ -340,11 +335,11 @@ fn main() {
 }
 		\end{minted}
 
-		První poznatkem je zde, že funkce v separátním souboru je označena klíčovým slovem \texttt{pub} to je potřebné z toho důvodu, že by jinak nebyla dosažitelná z ostatních modulů. V Rustu jsou implicitně všechny datové struktury privátní a pro využití v jiné lokaci je nutno viditelnost explicitně označit.
+		První poznatkem je zde, že funkce v~separátním souboru je označena klíčovým slovem \texttt{pub} to je potřebné z~toho důvodu, že by jinak nebyla dosažitelná z~ostatních modulů. V~Rustu jsou implicitně všechny datové struktury privátní a~pro využití v~jiné lokaci je nutno viditelnost explicitně označit.
 		
-		Následně je soubor \texttt{formatovani.rs} nutno označit jako validní modul v \texttt{lib.rs}. Následně ho už lze využít z \texttt{main.rs}.
+		Následně je soubor \texttt{formatovani.rs} nutno označit jako validní modul v~\texttt{lib.rs}. Poté ho již lze využít z~\texttt{main.rs}.
 		
-		\subsubsection*{\rust{std} modul a~přidružené}
+		\subsubsection*{std modul a~přidružené}
 			Holý Rust má 5 základních crates, které jsou součástí každé instalace a~lze je využít i~v~prázdném projektu
 			\begin{itemize}
 				\item \textbf{alloc} - obsahuje většinu funkcionality pro alokaci a~správu paměti
@@ -369,7 +364,6 @@ regex = { git = "https://github.com/rust-lang/regex", branch = "next" }
 			\end{minted}
 
 			Poté lze s~těmito moduly pracovat. Při prvním stavění projektu po přidání se tyto crates (a všechny ostatní crates, na~kterých projekt závisí) nejprve zkompilují (při dalších stavěních již toto není nutné).
-			
 			\begin{center}
 				\begin{figure}[H]
 					\centering
@@ -379,12 +373,11 @@ regex = { git = "https://github.com/rust-lang/regex", branch = "next" }
 				\end{figure}
 			\end{center}
 			
-			Avšak ještě je nutné vědět, jak s~danou crate zacházet. Na~stránce dané crate na~\href{https://crates.io}{crates.io} lze přečíst popis této crate, který většinou poskytuje minimalistickou ukázku kódu znázorňující zacházení s~ní. Avšak (pokud zde vůbec je) obsahuje minimální informace. Pro kompletní dokumentaci lze v~pravé části zpozorovat odrážku \texttt{Documentation}, obsahující odkaz na~dokumentaci dané crate, hostované na~\href{https://docs.rs/}{docs.rs}. Popřípadě, je-li crate kompletnější, může obsahovat jakéhosi průvodce, označeného v~pravé liště odrážkou \texttt{Homepage}.
+			Avšak ještě je nutné vědět, jak s~danou crate zacházet. Na~stránce dané crate na~\href{https://crates.io}{crates.io} lze přečíst popis této crate, který většinou poskytuje minimalistickou ukázku kódu znázorňující zacházení s~ní. Avšak (pokud zde vůbec je) obsahuje minimální informace. Pro kompletní dokumentaci lze v~pravé části zpozorovat odrážku \texttt{Documentation}, obsahující odkaz na~dokumentaci dané crate, hostované na~\href{https://docs.rs/}{docs.rs}. Popřípadě, je-li crate komplexnější, může obsahovat jakéhosi průvodce, označeného v~pravé liště odrážkou \texttt{Homepage}.
 
 
 		\subsubsection*{Dokumentace}
 			Pro hlubší obeznámení s~jednotlivými crates je interakce s~přímou dokumentací nevyhnutelná. Není však nutné číst přímo zdrojový kód. Ekosystém poskytuje stránku \href{https://docs.rs}{docs.rs}, která autogeneruje nízkoúrovňovou dokumentaci přímo z~repozitářů. Lze zde najít i~\href{https://docs.rs/rustc-std-workspace-std/latest/std/index.html}{dokumentaci pro crate \rust{std}}. Například pro crate \rust{serde} vypadá takto
-			
 			\begin{center}
 				\begin{figure}[H]
 					\centering
@@ -415,7 +408,7 @@ regex = { git = "https://github.com/rust-lang/regex", branch = "next" }
 				\item reference musí vždy být validní (tj. nesmí odkazovat na~neexistující proměnné)
 			\end{itemize}
 			
-			(Ve skutečnosti tato pravidla se avšak nevztahují na tzv. chytré ukazatele). Dodržení těchto pravidel je při kompilaci zaručeno pomocí borrow checkeru (kontroléru půjčení).
+			(Ve skutečnosti se tato pravidla avšak nevztahují na tzv. chytré ukazatele.) Dodržení těchto pravidel je při kompilaci zaručeno pomocí borrow checkeru (kontroléru půjčení).
 			\begin{minted}{rust}
 fn main() {
 	let a = "a".to_string();
@@ -426,7 +419,7 @@ fn main() {
 }
 			\end{minted}
 	
-			Tato ukázka kódu zámerně nezkompiluje. Borrow checker to nedovolí a vrátí následující chybu
+			Tato ukázka kódu zámerně nezkompiluje. Borrow checker to nedovolí a~vrátí následující chybu
 			\begin{minted}{bash}
 error[E0382]: borrow of moved value: `a`
 	--> src/main.rs:6:20
@@ -446,7 +439,7 @@ error[E0382]: borrow of moved value: `a`
 					
 				Ukazuje se, že ačkoliv kompilér Rustu (\texttt{rustc}) je velice striktní. Při chybě vrací přesná hlášení o tom, co je špatně.
 				
-				Tento exaktní problém vyvstává z toho, že vlastnictví hodnoty původně vlastněné proměnnou \texttt{a} bylo přesunuto proměnné \texttt{b}. V tomto bodě je proměnná \texttt{a} zinvalidněna a nelze ji nadále použít (pokud jí není přiřazena nová hodnota). Tomuto lze předejít použitím referencí.
+				Tento exaktní problém vyvstává z~toho, že vlastnictví hodnoty původně vlastněné proměnnou \texttt{a} bylo přesunuto proměnné \texttt{b}. V~tomto bodě je proměnná \texttt{a} zinvalidněna a~nelze ji nadále použít (pokud jí není přiřazena nová hodnota). Tomuto lze předejít použitím referencí.
 				\begin{minted}{rust}
 fn main() {
 	let a = "a".to_string();
@@ -470,7 +463,7 @@ fn main() {
 }
 				\end{minted}
 	
-				Každá proměnná v Rustu je ve výchozím stavu neměnitelná, proto ji je nutno definovat jako \texttt{mut} (mutable). Následně lze vytvořit měnitelnou referenci.
+				Každá proměnná v~Rustu je ve výchozím stavu neměnitelná, proto ji je nutno definovat jako \texttt{mut} (mutable). Následně lze vytvořit měnitelnou referenci.
 				
 				S~referencemi však může někdy dojít k~problémům, je-li referováno na~hodnotu, která již neexistuje (byla uvolněná z~paměti)
 				\begin{minted}{rust}
@@ -491,7 +484,7 @@ fn main() {
 			\subsubsection*{Stack a~heap}
 				Fundementálním konceptem je zde skutečnost, že při referování na proměnnou se nejedná o typ \texttt{String}, kdežto se jedná o \texttt{\&str} (string slice). Tento typ je jakýmsi pouhým náhledem do \texttt{String}u. Jedná se o to, že \texttt{String} je alokován na heap (haldu), kdežto \texttt{\&str} je na stacku (zásobníku).
 				
-				Stack je typ ukládání dat do paměti, kdy je daná hodnota nabita (push) na místo v paměti s konstantní velikostí  a~posléze na~něj může být nabita další hodnota, nebo může být hodnota ze stacku vytlačena (pop). Avšak vždy lze operovat pouze s~hodnotou naposledy přidanou (tzv. LIFO model - Last In First Out).
+				Stack je typ ukládání dat do paměti, kdy je daná hodnota nabita (push) na místo v~paměti s~konstantní velikostí a~posléze na~něj může být nabita další hodnota, nebo může být hodnota ze stacku vytlačena (pop). Avšak vždy lze operovat pouze s~hodnotou naposledy přidanou (tzv. LIFO model - Last In First Out).
 				\begin{center}
 					\begin{figure}[H]
 						\centering
@@ -547,7 +540,7 @@ fn main() {
 	// představují vlastní scope (rámec)
 
 	// nic, co je vně těchto závorek, nemá přístup
-	// k ničemu inicializovanému v~tomto scope
+	// k ničemu inicializovanému v tomto scope
 
 	println!("{}", t);
 }
@@ -589,9 +582,9 @@ fn main() {
 			
 				Anotace lifetimes je naprosto arbitrérní (musí však začínat s~\rust{'}), avšak dle konvence se značí malými počátečními písmeny latinské abecedy.
 				
-				Toto se nezkompiluje, a~to z~následujícího důvodu: Výstupem funkce \rust{nejvetsi()} je odkaz na~jednu z~proměnných, které jsou referencovány v~jejích parametrech. Avšak z~pohledu borrow checkeru, který kontroluje lifetimes, není jasné, jaké mají tyto vstupní parametry lifetimes. Co kdyby vracel odkaz proměnnou, která však nebude mít v~kontextu, ve kterém bude funkce použita, dostatečnou životnost? 
+				Toto se nezkompiluje, a~to z~následujícího důvodu: Výstupem funkce \rust{nejvetsi} je odkaz na~jednu z~proměnných, které jsou referencovány v~jejích parametrech. Avšak z~pohledu borrow checkeru, který kontroluje lifetimes, není jasné, jaké mají tyto vstupní parametry lifetimes. Co kdyby vracel odkaz proměnnou, která však nebude mít v~kontextu, ve kterém bude funkce použita, dostatečnou životnost? 
 				
-				Toto lze obejít anotací lifetimes v~hlavičce funkce \rust{nejvetsi()}.
+				Toto lze obejít anotací lifetimes v~hlavičce funkce \rust{nejvetsi}.
 				\begin{minted}{rust}
 fn nejvetsi<'a>(cislo1: &'a i32, cislo2: &'a i32) -> &'a i32
 				\end{minted}
@@ -648,7 +641,7 @@ rustup target list
 	\subsection{Windows}
 	Windows obecně nevyužívá žádné kontejnerizace aplikací, díky čemuž je export poměrně jednoduchý.
 	
-	\fection*{Přídání ikony binárního souboru}
+	\subsubsection*{Přídání ikony binárního souboru}
 		Pro přidání ikony lze využít crate \texttt{winres}. Nejprve je nutno ji přidat do \texttt{Cargo.toml}
 		\begin{minted}{bash}
 [target.'cfg(windows)'.build-dependencies]
@@ -659,12 +652,9 @@ winres = "0.1"
 		
 		Dále je potřeba přidat do stejného adresáře speciální soubour \texttt{build.rs}. Tento soubor slouží pro pokročilejší manipulaci při kompilaci. Jeho obsah bude následující
 		\begin{minted}{rust}
-#[cfg(windows)]
-use winres::WindowsResource;
-
 fn main() -> std::io::Result<()> {
 	#[cfg(windows)] {
-		WindowsResource::new()
+		winres::WindowsResource::new()
 			.set_icon("resources/icon.ico")
 			.compile()?;
 	}
@@ -824,7 +814,7 @@ basic-http-server --addr 127.0.0.1:3000 .
 		Nyní je celý proces hotov a~webovou aplikaci lze spustit na~adrese \linebreak\texttt{localhost:3000}.\cite{wasm_vid, wasm_gh}
 
 
-\section{Hra života s GUI}
+\section{Hra života s~GUI}
 	\subsection{Vymezení cílů}
 		Cílem této aplikace je naprogramovat cross-platform řešení pro uživatelem přizpůsobitelnou simulaci Hry života Johna Conwaye. Jedná se o "hru jednoho hráče", která je vizualizována jako dvojrozměrné pole buněk. Každá tato buňka je v~jakémkoliv čase právě v~jednom ze dvou stavů - mrtvá nebo živá. Čas v~simulaci je kvantifikován na~tzv. generace. To, zda mrtvá buňka v~další generaci oživne, nebo to, zda-li živá buňka zemře, podléhá nastaveným pravidlům hry, které se vážou na~počet živých sousedních buněk. Tradiční konfigurace se označuje jako S23/B3. To znamená, že aby živá buňka přežila, musí mít 2 nebo 3 živé sousedy a~aby mrtvá buňka oživla, musí mít právě 3 živé sousedy (nastane-li cokoliv jiného, poté buňka umře, respektive zůstává mrtvá).\cite{conway}.
 		\begin{center}
@@ -959,7 +949,7 @@ impl Game {
 	//      Tvorba
 	// --------------------------------------
 
-	// pomocná funkce pro generování reprezentace pole s~buňkami
+	// pomocná funkce pro generování reprezentace pole s buňkami
 	fn generate_board(size: usize) -> Vec<Vec<Cell>> { /* ... */ }
 
 	// vytvoření instance hry
@@ -1066,22 +1056,21 @@ fn main() -> std::io::Result<()> {
 }
 		\end{minted}
 		
-		A nastavit, aby se na~Windows neotevíralo okno příkazového řádku, tedy přidat do hlavičky \rust{main.rs}
+		A nastavit, aby se na~Windows neotevíralo okno příkazového řádku, tedy přidat do hlavičky 
 		\begin{minted}{rust}
 #![windows_subsystem = "windows"]
 		\end{minted}
 
-
 \section{Závěr}
-	Rust je velice dobrým programovacím jazykem a~osobně jsem si ho velice oblíbil. Ačkoliv má poměrně strmou učící křivku, má velice přívětivou komunitu vývojářu, kteří jsou ochotni pomoci. Dalším nedostatkem je relativní nevyspělost ekosystému a~nejspíše bude trvat ještě přinejmenším několik let, než bude mít Rust takové množství kvalitiních frameworků a~nástrojů, které mají některé jiné programovací jazyky. Toto je však dle mého názoru vše, co lze vytknout.
+	Rust je velice dobrým programovacím jazykem a~osobně jsem si ho oblíbil. Ačkoliv má poměrně strmou učící křivku, má velice přívětivou komunitu vývojářu, kteří jsou ochotni pomoci. Dalším nedostatkem je relativní nevyspělost ekosystému a~nejspíše bude trvat ještě přinejmenším několik let, než bude mít Rust takové množství kvalitiních frameworků a~nástrojů, které mají některé jiné programovací jazyky. Toto je však dle mého názoru vše, co lze vytknout.
 	
-	V průběhu této práce jsem si upevnil svoji znalost jazyka Rust a naučil jsem se s novým grafickým frameworkem. Největší obtíže mi působilo vymyšlení podléhající algoritmy.
+	V průběhu této práce jsem si upevnil svoji znalost jazyka Rust a~naučil jsem se pracovat s~novým grafickým frameworkem. Největší obtíže mi působilo vymyšlení podléhajících algoritmů.
 	
-	Jakožto přílohu přikládám vypracovanou příručku — průvodce pro programování v Rustu.
+	Jakožto přílohu přikládám vypracovanou příručku — zevrubnou průvodce pro započetí programování v~Rustu.
 
 %\printbibliography[title={Seznam použité literatury},heading={bibintoc}]
 \bibliographystyle{unsrt}
 \bibliography{literatura}
 
 \end{document}
-	
+		
