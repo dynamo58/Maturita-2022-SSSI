@@ -118,6 +118,20 @@ impl Game {
             }
         }
     }
+    #[cfg(target_arch = "wasm32")]
+    pub fn randomize_cells(&mut self, factor: u8) {
+        // use getryandom::getrandom;
+
+        for i in 0..self.config.size {
+            for j in 0..self.config.size {
+                let mut x = [0u8; 1];
+                // getrandom(&mut x).unwrap();
+
+                self.cells[i as usize][j as usize].is_alive =
+                    (false);
+            }
+        }
+    }
 
     // změní stav specifikované buňky
     pub fn change_cell_state(&mut self, cell: (usize, usize)) {
@@ -292,7 +306,6 @@ impl Game {
         let buff = self.recording_buffer.clone();
         let cfg = self.config.clone();
         std::thread::spawn(move || {
-            
             save_gif(buff, cfg);
         });
 
@@ -376,6 +389,7 @@ impl App for Game {
                         ui.add_space(15.);
 
                         // nahrávání
+                        #[cfg(not(target_arch = "wasm32"))]
                         ui.group(|ui| {
                             ui.set_width(150.);
 
@@ -385,6 +399,7 @@ impl App for Game {
 
                             ui.add_space(5.);
 
+                            
                             ui.horizontal(|ui| {
                                 ui.label("Velikost buňky: ");
                                 ui.add(egui::DragValue::new(&mut self.config.gif_cell_upscale));
@@ -392,14 +407,8 @@ impl App for Game {
                             });
 
                             if ui.button("Uložit jako GIF").clicked() {
-                                if self.is_recording {
-                                    self.change_recording_state();
-                                }
-
-                                #[cfg(not(target_arch = "wasm32"))] {
-                                    self.handle_gif_save();
-                                }
-
+                                self.is_recording = false;
+                                self.handle_gif_save();
                             }
                         })
                     });
@@ -422,9 +431,9 @@ impl App for Game {
                         }
 
                         if self.config.size != self.cells[0].len() {
-                            self.change_recording_state();
-
-                            #[cfg(not(target_arch = "wasm32"))] {
+                            #[cfg(not(target_arch = "wasm32"))]
+                            if self.is_recording {
+                                self.is_recording = false;
                                 self.handle_gif_save();
                             }
                             self.resize_to(self.config.size);
@@ -530,7 +539,6 @@ where
 
 #[cfg(target_arch = "wasm32")]
 use eframe::wasm_bindgen::{self, prelude::*};
-
 
 
 #[cfg(target_arch = "wasm32")]
