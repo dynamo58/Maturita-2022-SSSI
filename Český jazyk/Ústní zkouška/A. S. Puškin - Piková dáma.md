@@ -1,4 +1,4 @@
-# > A. S. Puškin - Piková dáma
+# A. S. Puškin - Piková dáma
 ---
 
 ## Analýza uměleckého textu
@@ -8,8 +8,7 @@
 
 - **děj**
 
-Hlavním protagonistou je poruštěný německý voják Heřman. Tomu sám otec nezanechal moc peněz. Tak vysedává v krčmách a sleduje, jak ostatní hrají karty, ale on sám by o peníze nikdy nehrál. Avšak jednoho dne slyšel od Tomského příběh o jeho babičce Anně Fedotovně, která se hraním karet jednou velice zadlužila a její manžel odmítl dluh zaplatit. Tak se šla poradit s hrabětem Saint Germainem. Poté šla znovu hrát. Uhodla 3 karty za sebou a dluh tak splatila. Heřman byl tímto příběhem zaujat a rozhodl se, že ono tajemství zjistí, aby si mohl vydělat hraním karet hodně peněz. Heřman posléze začal stávat pod Fedotovninými okny. Začal si psát s její služkou - Lizavetou Ivanovnou. Přes ní zjistil informace o pozici stařenčinova kabinetu. Jednoho dne, když nebyl nikdo doma, vnikl Heřman do domu a schoval se tam. Počkal, až stařenku odstrojí a poté na ní začal naléhat, aby mu prozradila jak vyhrát. Anna Fedotovna byla tímto velice polekaná a nic mu neřekla, obzvláště když na ni vytáhl (bez nábojů) pistole. Fedotovna se tak lekla, že umřela. Heřman šel za Lizavetou a všechno jí řekl. Ta byla celou situací zděšená, ale Heřmana pustila zadním vchodem ven. Hraběnka měla pohřeb, kterého se zúčastnil i Heřman. Následující noci měl zjevení Anny Fedotovny, která mu řekla na které karty má sázet (trojka, sedma, eso), měl by se podle ní oženit s Lizavetou a po vyhrání obnosu již nesmí sázet. Na první, trojku, i druhou, sedmu, vyhrál, na třetí, eso, vsadil all-in. Eso skutečně vyhrálo, ale když se Heřman hodlal sebrat obnos. Byl zastaven. Podíval se na svoji kartu a zjistil, že vsadil dámu. Zdálo se mu, že na něj dáma na kartě zamrkala. Z tohoto se Heřman dočista zbláznil. Skončil v nemocnici a stále opakuje “Trojka, sedma, eso, trojka, sedma, eso, ...”. Lizaveta se vdala za mladého muže s jměním a poklidně slouží.
-
+Hlavním protagonistou je poruštěný německý voják Heřman. Tomu sám otec nezanechal moc peněz. Tak vysedává v krčmách a sleduje, jak ostatní hrají karty, ale on sám by o peníze nikdy nehrál. Avšak jednoho dne slyšel od Tomského příběh o jeho babičce Anně Fedotovně, která se hraním karet jednou velice zadlužila a její manžel odmítl dluh zaplatit. Tak se šla poradit s hrabětem Saint Germainem. Poté šla znovu hrát. Uhodla 3 karty za sebou a dluh tak splatila. Heřman byl tímto příběhem zaujat a rozhodl se, že ono tajemství zjistí, aby si mohl vydělat hraním karet hodně peněz. Heřman posléze začal stávat pod Fedotovninými okny. Začal si psát s její služkou - Lizavetou Ivanovnou. Přes ní zjistil informace o pozici stařenčinova kabinetu. Jednoho dne, když nebyl nikdo doma, vnikl Heřman do domu a schoval se tam. Počkal, až stařenku odstrojí a poté na ní začal naléhat, aby mu prozradila jak vyhrát. Anna Fedotovna byla tímto velice polekaná a nic mu neřekla, obzvláště když na ni vytáhl (bez nábojů) pistoli. Fedotovna se tak lekla, že umřela. Heřman šel za Lizavetou a všechno jí řekl. Ta byla celou situací zděšená, ale Heřmana pustila zadním vchodem ven. Hraběnka měla pohřeb, kterého se zúčastnil i Heřman. Následující noci měl zjevení Anny Fedotovny, která mu řekla na které karty má sázet (trojka, sedma, eso), měl by se podle ní oženit s Lizavetou a po vyhrání obnosu již nesmí sázet. Na první, trojku, i druhou, sedmu, vyhrál, na třetí, eso, vsadil all-in. Eso skutečně vyhrálo, ale když se Heřman hodlal sebrat obnos, byl zastaven. Podíval se na svoji kartu a zjistil, že vsadil dámu. Zdálo se mu, že na něj dáma na kartě zamrkala. Z tohoto se Heřman dočista zbláznil. Skončil v nemocnici a stále opakuje “Trojka, sedma, eso, trojka, sedma, eso, ...”. Lizaveta se vdala za mladého muže s jměním a poklidně slouží.
 ### Téma a motiv
 
 - **téma**
@@ -17,6 +16,7 @@ Hlavním protagonistou je poruštěný německý voják Heřman. Tomu sám otec 
 bezmezná materiální chtivost 
 
 - **motiv**
+
 kritika lidské chamtivosti a bezohlednosti; u lidí mají peníze vyšší cenu než cokoliv; peníze by měli být získány poctivou prací
 
 
@@ -25,6 +25,7 @@ kritika lidské chamtivosti a bezohlednosti; u lidí mají peníze vyšší cenu
 autorovo prostředí - Rusku 19. století
 
 ### Kompoziční výstavba
+
 chronologická (na závěr skok vpřed); 4 kapitoly + závěr
 
 ### Literární druh a žánr
@@ -51,28 +52,24 @@ zná kouzlo tří výherních karet
 
 ### Vyprávěcí způsoby
 
-pásmo vypravěče v er-formě;
+pásmo vypravěče v er-formě
+
 přímá řeč: Lizaveta Ivanovna, Heřman
 
 ### Typy promluv
 
 dialog Lizavety Ivanovny a Heřmana
 
-### Veršovaná výstavba
-
-\-\-\-
-
 ## Literárněhistorický kontext
 ---
 
 ### Kontext autorovy tvorby
 
-dílo napsal ve vyhnanství na jihu Ruska
-
 Puškin (1799-1837)
 * ruský básník, prozaik, dramatik
-* pocházel ze starého šlechtického rodu  
-- studoval lyceum pro šlechtice, kde vynikal svým literárním talentem  
+* pocházel ze starého šlechtického rodu
+- studoval lyceum pro šlechtice v Carském selu, kde vynikal svým literárním talentem
+	- v 15 letech (!) publikoval svou první poemu
 - po ukončení studia pracoval na ministerstvu zahraničí v Petrohradě  
 - začal se politicky angažovat (sympatizoval s děkabristy)  
 - byl členem literárního spolku Zelená lampa a Arzamas  
@@ -91,9 +88,9 @@ Další díla např.:
 
 novela o lidské vypočítavost, chamtivosti a závislosti
 
-* **Boris Godunov**
+- **Boris Godunov**
 
-* historické drama zasazené do období Smuty
+historické drama zasazené do období Smuty
 
 ### Literální / obecně kulturní kontext
 
@@ -129,7 +126,7 @@ Další autoři:
 -   Jeho rodiče byli kočovní herci
 -   Zakladatel hororu a občas považován za zakl. rané vědeckofantastické literatury
 -   _Jáma a kyvadlo_ [hororová povídka]
--   _Havran_ [hororová báseň]
+-   _Havran_ [horrorová báseň]
     
 
 **Nikolaj Vasiljevič Gogol** [1809-1852]
@@ -139,36 +136,9 @@ Další autoři:
 -   _Mrtvé duše_ [satyrický román, hlavní protagonista je sedlák kupující mrtvé duše]
     
 
-**Michael Jurjevič Lermontov**[1814-1841]
+**Michael Jurjevič Lermontov** [1814-1841]
 -   Básník, prozaik, dramatik
 -   Jeho dílem vrcholí ruský revoluční romantismus
 -   Jeho próza dala vzniku psychologické novele
 -   Zemřel, stejně jako puškin v střeleckém duelu
--   Často psal poemy, př. _Démon_
-
-### Doplňující informace
-• dominantní slohový postup:  vyprávěcí  
-
-• vysvětlení názvu díla:  Piková dáma – název karty, kterou Heřman odkryl místo esa a prohrál veškeré peníze. Tvář na kartě  
-byla velmi podobná tváři stařeny, která se mu takto pomstila.  
-
-• posouzení aktuálnosti díla:  Hlavní téma novely – lidská hamižnost a touha získat co nejvíc peněz bez práce – je stále aktuální.  
-
-• pravděpodobný adresát:  Kniha je určena všem čtenářům, není konkrétně zaměřena.  
-
-• určení smyslu díla:  Novela poukazuje na zkaženost ruské šlechty, kde hlavní roli hrají peníze a láska jde stranou, což může vést ke zničení života. Člověk by si měl peníze vydělat, ne je získat zadarmo.  
-• zařazení knihy do kontextu celého autorova díla:  Novela vyšla roku 1934 po dopsání Evžena Oněgina, když žil Puškin v Petrohradě a pracoval jako úředník.  
-
-• tematicky podobné dílo:  Karel Poláček – Hráči: román s karetní tematikou  
-
-• porovnání s filmovou verzí nebo dramatizací:  
-
-- podle novely vznikla opera Petra Iljiče Čajkovského a několik filmů  
-U nás vznikl film Piková dáma roku 1974, Heřmana hraje Milan Kňažko.
-
----
----
----
-
-**Zdroje**
-* https://rozbor-dila.cz/evzen-onegin-rozbor-dila-k-maturite/
+-   Často psal poemy (Byronské povídky), př. _Démon_

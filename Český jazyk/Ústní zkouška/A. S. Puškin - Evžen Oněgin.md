@@ -1,10 +1,12 @@
-# > A. S. Puškin - Evžen Oněgin
+# A. S. Puškin - Evžen Oněgin
 ---
 
 ## Analýza uměleckého textu
 ---
 
 ### Zasazení výňatku do kontextu díla
+
+- 
 
 - **děj**
 
@@ -19,7 +21,6 @@ nenaplňená láska; život "zbytečného člověka"; lidská osamocenost; člov
 - **motiv**
 motiv poutníka; nenaplněná láska; zrada přítele
 
-
 ### Časoprostor
 
 Rusku 19. století - venkov i velkoměsto
@@ -30,25 +31,21 @@ chronologická; zdrcadlová (mající hodně kontrastů)
 
 ### Literární druh a žánr
 
-lyricko-epický; veršovaný román
+lyricko-epický, „román ve verších“
 
 ### Vypravěč / lyrický subjekt
 
-heterodiegetický i homodiegetický; přímá řeč
+heterodiegetický; přímá řeč
 
 ### Postavy
 
-* **Evžen Oněgin**
-mladý znuděný muž z bohaté rodiny; ačkoliv navštěvuje jednu společenskou akci za druhou, je naplněn splínem a nudou; později odchází na venkov
+* **Evžen Oněgin** - mladý znuděný muž z bohaté rodiny; ačkoliv navštěvuje jednu společenskou akci za druhou, je naplněn splínem a nudou; později odchází na venkov
 
-* **Taťána**
-původně naivně zamilovaná do Oněgina; samotářská; tichá; skromná
+* **Taťána** - původně naivně zamilovaná do Oněgina; samotářská; tichá; skromná
 
-* **Lenskij**
-Oněginův přítel; vášnivý a romantický básník
+* **Lenskij** - Oněginův přítel; vášnivý a romantický básník
 
-* **Olga**
-Lenského žena; sestra Taťány; společenská; energická
+* **Olga** - Lenského žena; sestra Taťány; společenská; energická
 
 
 ### Vyprávěcí způsoby
@@ -68,12 +65,20 @@ er-forma; vypravěč se výrazně zapojuje do děje
 
 ### Kontext autorovy tvorby
 
-dílo napsal ve vyhnanství na jihu Ruska
+- dílo napsal ve vyhnanství na jihu Ruska
+- inspirace osvícenstvím
+	- díla doplňoval poznámkovým aparátem (mapy, odborné popisy míst, texty další autorů, ...)
+	- tematizace 
+- postmoderní prvky
+	- inklanace k nespolehlivému vypravování (střídání časových rovin, ...)
+	- věnování pozornosti (zdánlivým) banalitám a utlačování faktorů,které bychom snad považovali za ústřední
+
 
 Puškin (1799-1837)
 * ruský básník, prozaik, dramatik
-* pocházel ze starého šlechtického rodu  
-- studoval lyceum pro šlechtice, kde vynikal svým literárním talentem  
+* pocházel ze starého šlechtického rodu
+- studoval lyceum pro šlechtice v Carském selu, kde vynikal svým literárním talentem
+	- v 15 letech (!) publikoval svou první poemu
 - po ukončení studia pracoval na ministerstvu zahraničí v Petrohradě  
 - začal se politicky angažovat (sympatizoval s děkabristy)  
 - byl členem literárního spolku Zelená lampa a Arzamas  
@@ -92,9 +97,9 @@ Další díla např.:
 
 novela o lidské vypočítavost, chamtivosti a závislosti
 
-* **Boris Godunov**
+- **Boris Godunov**
 
-* historické drama zasazené do období Smuty
+historické drama zasazené do období Smuty
 
 ### Literální / obecně kulturní kontext
 
@@ -130,7 +135,7 @@ Další autoři:
 -   Jeho rodiče byli kočovní herci
 -   Zakladatel hororu a občas považován za zakl. rané vědeckofantastické literatury
 -   _Jáma a kyvadlo_ [hororová povídka]
--   _Havran_ [hororová báseň]
+-   _Havran_ [horrorová báseň]
     
 
 **Nikolaj Vasiljevič Gogol** [1809-1852]
@@ -140,9 +145,9 @@ Další autoři:
 -   _Mrtvé duše_ [satyrický román, hlavní protagonista je sedlák kupující mrtvé duše]
     
 
-**Michael Jurjevič Lermontov**[1814-1841]
+**Michael Jurjevič Lermontov** [1814-1841]
 -   Básník, prozaik, dramatik
 -   Jeho dílem vrcholí ruský revoluční romantismus
 -   Jeho próza dala vzniku psychologické novele
 -   Zemřel, stejně jako puškin v střeleckém duelu
--   Často psal poemy, př. _Démon_
+-   Často psal poemy (Byronské povídky), př. _Démon_

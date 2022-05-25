@@ -32,7 +32,8 @@ epika; román
 Guy Montag
 
 - požárník, touží po poznání, statečný, horlivý, netrpělivý
-- Mildred
+
+Mildred
 - Montagova žena; povrchní, zdegenerovaná a otupěná 
 
 Clarissa McClellan
@@ -40,12 +41,11 @@ Clarissa McClellan
 - mladá dívka, která ví, jak lidi přemýšleli v minulosti
 - otevře Montagovy oči
 
-
 Velitel Beatty
 
 - oddaný svému povolání
 
-Profesor Faber 
+Profesor Faber
 
 - starý, studovaný, poučuje Montaga
 
@@ -62,7 +62,7 @@ Profesor Faber
 
 ## Literárněhistorický kontext
 
-### Kontext autorovy tvorby
+### Kontext autorovy tvorby## Literárněhistorický kontext
 
 - dílo je pojmenováno dle teploty, při níž hoří papír
 
@@ -76,8 +76,8 @@ Další díla např.:
 ### Literální / obecně kulturní kontext
 
 - období po světových válkách
-- pacifismus 
-- antiutopie reflektuje totalitní režimy, také studenou válku 
+- pacifismus
+- antiutopie reflektuje totalitní režimy, také studenou válku
 
 Další autoři:
 

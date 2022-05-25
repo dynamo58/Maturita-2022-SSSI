@@ -39,7 +39,7 @@ heterodiegetický (er-forma); včetně Kopfrkinglových myšlenek
 ### Postavy
 - **Karel Kopfrkingl**
 
-etnicky částeční Němec; otec dvou dětí; schizofrenik; zaměstnanec Krematoria; zpočátku mírumilovný;nadšenec do Orientálních náboženství (buddhismus)
+etnicky částečný Němec; otec dvou dětí; schizofrenik; zaměstnanec Krematoria; zpočátku mírumilovný;nadšenec do Orientálních náboženství (buddhismus)
 
 * **Marie Kopfrkinglová**
 
@@ -61,10 +61,6 @@ jazyk spisovný; řeč přímá i nepřímá
 ### Typy promluv
 
 dialogy a monology (Kopfrkingl moc nepouští druhé ke slovu)
-
-### Veršovaná výstavba
-
--/-
 
 ## Literárněhistorický kontext
 ---
