@@ -41,7 +41,7 @@ heterodiegetický; přímá řeč
 
 * **Evžen Oněgin** - mladý znuděný muž z bohaté rodiny; ačkoliv navštěvuje jednu společenskou akci za druhou, je naplněn splínem a nudou; později odchází na venkov
 
-* **Taťána** - původně naivně zamilovaná do Oněgina; samotářská; tichá; skromná
+* **Taťána Larinová** - původně naivně zamilovaná do Oněgina; samotářská; tichá; skromná
 
 * **Lenskij** - Oněginův přítel; vášnivý a romantický básník
 

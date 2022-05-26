@@ -29,7 +29,7 @@ nešvary společnosti, korupce, úplatkářství, podvody
 ### Kompoziční výstavba
 
 - chronologický postup
-- 5 dějství (aktů)
+- 5 dějství (aktů) ~ dle Gustava Freytaga
 	- expozice
 	- kolize
 	- krize

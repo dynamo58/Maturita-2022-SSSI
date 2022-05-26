@@ -52,13 +52,9 @@ nepřímá řeč, kniha je psána jako vyprávění
 
 Pásmo vypravěče; ich-forma
 
-### Veršovaná výstavba
-
-\-\-\-
-
 ## Literárněhistorický kontext
 
-### Kontext autorovy tvorby
+### Kontext autorovy tvorby -> Daniel Defoe (1660 - 1731)
 původní název: *The life and strange surprising adventures of Robinson Crusoe, of York, mariner*;
 
 zfilmováno, četné deriváty - tzv. robinzonády

@@ -1,10 +1,15 @@
 #!/usr/bin/python
 
-import os
+import os, sys
 import random
 
+def strip(text):
+	return text[0:text.rfind(".")]
 
 r = os.listdir(".")
-m = len(r)
 
-print(r[random.randint(0, m)])
+if "--vše" in sys.argv:
+	random.shuffle(r)
+	print(", ".join(list(map(strip, r))))
+else:
+	print(r[random.randint(0, len(r))])
