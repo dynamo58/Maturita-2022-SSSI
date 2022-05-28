@@ -1,7 +1,0 @@
-code/target
-code/Cargo.lock
-code/output.gif
-dest/web/gol_bg.wasm
-dest/web/gol.js
-dest/*.exe
-dest/*.AppImage
